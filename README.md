@@ -15,17 +15,17 @@ The application, its customers, the roster, the rate card, the tickets and the t
 
 ## See it first
 
-**The demo page**, [yeokimsiang.github.io/bob-in-action-v2](https://yeokimsiang.github.io/bob-in-action-v2/), tells the story in a browser. It follows one line of the legacy code, `Desk.java` line 93, through the four stages to an illustrative price, then shows the seven migrations, how the kit is built and how to run it yourself. Nothing to install.
+**The demo page**, [ingram-micro-asia-singapore.github.io/bob-in-action-v2](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/), tells the story in a browser. It follows one line of the legacy code, `Desk.java` line 93, through the four stages to an illustrative price, then shows the seven migrations, how the kit is built and how to run it yourself. Nothing to install.
 
-**The app we started with**, [a recorded copy of the legacy desk](https://yeokimsiang.github.io/bob-in-action-v2/legacy-desk/): its code, how it starts, and its own screen answering three orders as the real app did. Under each migration, the demo page puts that target's answers to the same three orders beside the legacy app's; the TypeScript client passes them to the legacy app and checks what comes back, and PostgreSQL, a database script with no service, shows its script instead.
+**The app we started with**, [a recorded copy of the legacy desk](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/legacy-desk/): its code, how it starts, and its own screen answering three orders as the real app did. Under each migration, the demo page puts that target's answers to the same three orders beside the legacy app's; the TypeScript client passes them to the legacy app and checks what comes back, and PostgreSQL, a database script with no service, shows its script instead.
 
 **Three short videos** of the kit in IBM Bob. They have no sound: the narration plays as captions under the picture, and each video's page lists its chapters and the full narration.
 
 | | Video | What it shows |
 |---|---|---|
-| [<img src="site/videos/bob-in-action.jpg" width="240" alt="Bob in action">](https://yeokimsiang.github.io/bob-in-action-v2/#watch-bob-in-action) | [Bob in action](https://yeokimsiang.github.io/bob-in-action-v2/#watch-bob-in-action) | The four commands in the Bob IDE, from the legacy code to a line in the price. A recreated session, sped up. |
-| [<img src="site/videos/what-bob-reads.jpg" width="240" alt="What Bob reads">](https://yeokimsiang.github.io/bob-in-action-v2/#watch-what-bob-reads) | [What Bob reads](https://yeokimsiang.github.io/bob-in-action-v2/#watch-what-bob-reads) | The `.bob` folder: which file decides who Bob is, what he knows, what he can reach and what he may do. A recreated IDE with real Bob replies. |
-| [<img src="site/videos/bob-shell.jpg" width="240" alt="Bob Shell">](https://yeokimsiang.github.io/bob-in-action-v2/#watch-bob-shell) | [Bob Shell](https://yeokimsiang.github.io/bob-in-action-v2/#watch-bob-shell) | The same four stages from the terminal, one `bob` run per stage and a checker after each. Recreated from real probes, sped up. |
+| [<img src="site/videos/bob-in-action.jpg" width="240" alt="Bob in action">](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/#watch-bob-in-action) | [Bob in action](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/#watch-bob-in-action) | The four commands in the Bob IDE, from the legacy code to a line in the price. A recreated session, sped up. |
+| [<img src="site/videos/what-bob-reads.jpg" width="240" alt="What Bob reads">](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/#watch-what-bob-reads) | [What Bob reads](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/#watch-what-bob-reads) | The `.bob` folder: which file decides who Bob is, what he knows, what he can reach and what he may do. A recreated IDE with real Bob replies. |
+| [<img src="site/videos/bob-shell.jpg" width="240" alt="Bob Shell">](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/#watch-bob-shell) | [Bob Shell](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/#watch-bob-shell) | The same four stages from the terminal, one `bob` run per stage and a checker after each. Recreated from real probes, sped up. |
 
 Bob in action and Bob Shell follow their own run of the kit on the same code; grey bars cover that run's IDs and numbers.
 
@@ -33,10 +33,10 @@ Bob in action and Bob Shell follow their own run of the kit on the same code; gr
 
 | Document | What it holds |
 |---|---|
-| [Assessment report](https://yeokimsiang.github.io/bob-in-action-v2/#report-assessment) | 23 findings, each tied to the code, and three ways forward |
-| [Effort model](https://yeokimsiang.github.io/bob-in-action-v2/#report-effort) | Low, central and high hours for every deliverable |
-| [Implementation plan](https://yeokimsiang.github.io/bob-in-action-v2/#report-plan) | Waves of work packages, with who does what |
-| [Statement of work](https://yeokimsiang.github.io/bob-in-action-v2/#report-sow) | Scope and client decisions, priced in the SI's own tool |
+| [Assessment report](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/#report-assessment) | 23 findings, each tied to the code, and three ways forward |
+| [Effort model](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/#report-effort) | Low, central and high hours for every deliverable |
+| [Implementation plan](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/#report-plan) | Waves of work packages, with who does what |
+| [Statement of work](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/#report-sow) | Scope and client decisions, priced in the SI's own tool |
 
 ## What is in the repository
 
@@ -182,3 +182,12 @@ The assessment's target annexes discuss the same seven targets.
 ## The governed version
 
 This repository is the interactive path: you drive Bob and run the checks. Internally, Ingram also runs the same four stages through a governed controller that starts each Bob session in a frozen copy of the workspace, enforces a credit budget per stage, runs every checker itself and accepts or rejects each stage automatically, keeping a record of what was spent and why.
+
+## Credits and copyright
+
+- The demo, the kit, the legacy application and its data, and the videos are © 2026 Ingram Micro. All rights reserved.
+- Partners may use this kit for their own client work. Please don't republish or rebrand it.
+- IBM Bob is IBM's product. The kit is written for IBM Bob and uses its configuration format (modes, skills, rules and
+  hooks), and `AGENTS.md` starts from Bob's `/init` template. The videos show a recreation of IBM Bob's interface, and
+  Bob's documents and the code in `targets/` come from IBM Bob's runs. Any IBM material in this repository remains IBM's.
+- IBM, IBM Bob and the IBM logo are trademarks of International Business Machines Corporation.

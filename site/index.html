@@ -597,8 +597,6 @@ p.hidden-line { margin-left: 0; }
   .fm-box.is-new.is-loose::before { border-bottom-style: dashed; border-bottom-color: var(--grey); }
   .fm-box.is-new:not(:last-child)::after { content: ""; position: absolute; left: calc(-1 * var(--s4)); top: calc(var(--s2) + 0.65em); bottom: -1px; border-left: 1px solid var(--grey); } }
 
-.v2-mark { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s1) var(--s2); margin: 0 0 var(--s2); font-size: var(--t-fine); }
-.v2-tag { padding: 1px var(--s2); background: var(--navy); color: var(--paper); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
 .start-app { display: flex; flex-direction: column; gap: 2px; margin: 0 0 var(--s4); padding: var(--s3) var(--s3) var(--s3) var(--s4);
   background: var(--paper); color: var(--ink); text-decoration: none; border-left: 4px solid var(--blue); border-bottom: 4px solid var(--paper); }
 .start-app:hover, .start-app:focus-visible { border-bottom-color: var(--blue); }
@@ -762,7 +760,6 @@ p.hidden-line { margin-left: 0; }
   <div class="wrap">
     <div class="inner">
       <svg class="wordmark" role="img" aria-label="Ingram Micro" viewBox="0 0 523.77 95.4" xmlns="http://www.w3.org/2000/svg" overflow="hidden"><defs></defs><g><g><path d="M495.17 20.36C495.17 18.14 497.31 17.23 500.79 17.23 504.27 17.23 506.41 18.06 506.41 20.36 506.41 23.22 502.94 23.55 500.77 23.55 497.3 23.55 495.17 22.64 495.17 20.36M509.72 20.36C509.72 16 506.38 12.97 500.77 12.97 496.71 12.97 491.85 14.99 491.85 20.36 491.85 25.73 496.16 27.8 500.77 27.8 505.38 27.8 509.72 25.49 509.72 20.36M495.2 40.82 495.2 37.73C495.2 35.81 496.41 35.11 497.39 35.11 498.48 35.11 499.63 35.85 499.63 37.73L499.63 40.82 495.2 40.82ZM502.62 40.82 502.62 37.86 509.47 35.21 509.47 30.7 501.8 33.92C501.12 32.05 499.3 30.91 497.32 30.91 494.12 30.91 492.11 33 492.11 37.18L492.11 44.88 509.47 44.88 509.47 40.82 502.62 40.82ZM498.57 48.73C494.39 49.18 491.85 51.41 491.85 55.76 491.85 60.98 495.98 63.55 500.79 63.55 505.6 63.55 509.72 61.06 509.72 55.89 509.72 51.89 507.37 49.16 503.38 48.73L503.14 52.68C504.81 52.91 506.41 53.79 506.41 55.69 506.41 58.76 503.35 59.03 500.96 59.03 498.86 59.03 495.12 58.75 495.12 55.89 495.12 53.67 496.91 53 498.83 52.98L498.57 48.73ZM509.47 67.46 492.1 67.46 492.1 71.51 509.47 71.51 509.47 67.46ZM509.47 84.93 509.47 87.71 495.32 91.89 495.32 91.99 509.47 91.99 509.47 95.4 492.11 95.4 492.11 89.05 502.51 86.01 492.11 82.83 492.11 76.47 509.47 76.47 509.47 80.51 495.32 80.51 495.32 80.62 509.47 84.93ZM151.99 95.4 86.29 95.4C81.2 76.52 70.42 36.67 70.42 36.67L70.24 36.67 70.24 95.4 43.38 95.4 43.38 14.23 90 14.23C94.91 32.96 105.21 71.47 105.21 71.47L105.38 71.47 105.38 14.23 132.31 14.23 132.31 26.56C125.74 33.49 121.76 42.35 121.76 53.46 121.76 69.41 130.71 89.2 151.98 95.4M471.21 14.23 471.21 95.4 443.08 95.4 443.08 31.83 442.66 31.83 426.5 95.4 400.52 95.4 384.41 31.83 383.98 31.83 383.98 95.4 334.77 95.4 329.86 77.92 303.41 77.92 298.51 95.4 251.49 95.4C251.49 95.4 249.89 83.44 249.48 80.46 248.09 70.4 245.06 67.96 239.06 67.96L230.85 67.96 230.85 95.4 182.68 95.4C196.56 92.24 209.09 85.94 216.26 81.61L206.15 43.25 179.25 50.34 184.98 72.1C183.3 73.3 177.7 75.26 173.86 75.26 161.01 75.26 154.92 62.39 154.92 51.3 154.92 33.45 173.1 26.58 189.14 26.58 192.86 26.58 197.68 26.91 198.36 26.99L195 14.25 251.06 14.25C273.5 14.25 282.2 24.89 282.2 36.21 282.2 53.34 265.85 56.56 262.74 57.11 262.69 57.12 262.69 57.59 262.74 57.6 269.27 58.84 274.06 62 277.13 67.51 277.02 67.32 294.3 18.71 295.86 14.25L338.96 14.25 357.15 65.15 357.38 65.15 357.38 14.23 403.73 14.23C403.73 14.23 414.47 58.67 414.54 58.67 418.03 43.88 425.05 14.23 425.05 14.23L471.22 14.23ZM0 14.23 31.22 14.23C31.22 14.23 31.18 68.17 31.18 95.4 30.98 95.4 0.19 95.42 0 95.4L0 14.23ZM316.39 31.66 307.66 58.42 325.66 58.42 316.85 31.66 316.38 31.66ZM230.84 49.66 240.12 49.66C247.71 49.66 250.88 45.74 250.88 40.94 250.88 34.81 245.65 32.4 240.12 32.4L230.84 32.4 230.84 49.66Z" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" fill="#0077D4" fill-opacity="1"/><path d="M513.47 5.15C513.47 2.31 515.78 0 518.62 0 521.46 0 523.77 2.31 523.77 5.15 523.77 7.99 521.46 10.3 518.62 10.3 515.78 10.3 513.47 7.99 513.47 5.15M522.52 5.15C522.52 2.74 520.78 1 518.63 1 516.48 1 514.73 2.74 514.73 5.15 514.73 7.56 516.47 9.31 518.63 9.31 520.79 9.31 522.52 7.56 522.52 5.15M516.64 2.21 518.81 2.21C520.21 2.21 520.96 2.7 520.96 3.92 520.96 4.92 520.39 5.4 519.43 5.49L521 8.05 519.88 8.05 518.37 5.54 517.71 5.54 517.71 8.05 516.62 8.05 516.62 2.21ZM517.73 4.71 518.68 4.71C519.32 4.71 519.88 4.63 519.88 3.84 519.88 3.16 519.25 3.04 518.69 3.04L517.72 3.04 517.72 4.71Z" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4" fill="#0077D4" fill-opacity="1"/></g></g></svg>
-      <p class="v2-mark"><span class="v2-tag">V2 preview</span> <a href="https://yeokimsiang.github.io/bob-in-action/">See the accepted version</a></p>
       <p class="eyebrow"><span class="long">IBM Bob for Ingram SI and reseller partners</span><span class="short">IBM Bob for Ingram partners</span></p>
       <h1>IBM Bob turns a legacy application's code into the four documents an SI prices from.</h1>
       <p class="teaser">Follow one line of code, <code>Desk.java</code> line 93, through all four stages to an illustrative price of <span>SGD 2,940</span>.</p>
@@ -2467,7 +2464,7 @@ reports/implementation-plan.md:
   <div class="wrap">
     <p class="eyebrow">Your turn</p>
     <h2 class="section-title">Try it yourself</h2>
-    <p class="lead">Open the <a href="https://github.com/yeokimsiang/bob-in-action-v2">Bob in action repository</a> in your own Bob, choose a run name, and run the four commands in order. After each one you run a plain checker yourself.</p>
+    <p class="lead">Open the <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2">Bob in action repository</a> in your own Bob, choose a run name, and run the four commands in order. After each one you run a plain checker yourself.</p>
     <div class="commands">
       <p><code>/discover</code> <code>acme-1</code></p>
       <p><code>/assess</code> <code>acme-1</code></p>
@@ -5179,59 +5176,59 @@ dotnet test targets/dotnet/tests/PreviewApi.Tests/PreviewApi.Tests.csproj --conf
       <li>
         <h3>You type the command</h3>
         <p>You type <code>/assess</code> and a run name. The command file says which mode and skill Bob uses, the three files he writes and the two checks you run afterwards. In any other mode it stops and asks you to switch.</p>
-        <p class="kit-files"><a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/.bob/commands/assess.md">.bob/commands/assess.md</a></p>
+        <p class="kit-files"><a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/.bob/commands/assess.md">.bob/commands/assess.md</a></p>
       </li>
       <li>
         <h3>The mode sets what Bob may do</h3>
         <p>The command needs the architect persona, <code>si-architect</code>. It may write only the Discover and Assess files under <code>runs/&lt;name&gt;/</code> and has no shell. In <code>/assess</code> it uses the read-only tickets tool, and on its own files the read-only checks tool.</p>
-        <p class="kit-files"><a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/.bob/custom_modes.yaml">.bob/custom_modes.yaml</a></p>
+        <p class="kit-files"><a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/.bob/custom_modes.yaml">.bob/custom_modes.yaml</a></p>
       </li>
       <li>
         <h3>The rules load</h3>
         <p>The shared rules apply in every mode: the goal, where Bob may work, how he cites evidence and when he stops. The architect's own rules add its scope, inputs, outputs and stop conditions.</p>
-        <p class="kit-files"><a href="https://github.com/yeokimsiang/bob-in-action-v2/tree/main/.bob/rules">.bob/rules/</a> <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/.bob/rules-si-architect/AGENTS.md">.bob/rules-si-architect/AGENTS.md</a></p>
+        <p class="kit-files"><a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/tree/main/.bob/rules">.bob/rules/</a> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/.bob/rules-si-architect/AGENTS.md">.bob/rules-si-architect/AGENTS.md</a></p>
       </li>
       <li>
         <h3>The skill brings the method</h3>
         <p>The <code>si-assess</code> skill holds the assessment contract, three templates (the assessment, the target annexes and the findings file) and the findings checker. Bob also reads the SI's report standard and scoring rubric.</p>
-        <p class="kit-files"><a href="https://github.com/yeokimsiang/bob-in-action-v2/tree/main/.bob/skills/si-assess">.bob/skills/si-assess/</a> <a href="https://github.com/yeokimsiang/bob-in-action-v2/tree/main/.bob/standards">.bob/standards/</a></p>
+        <p class="kit-files"><a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/tree/main/.bob/skills/si-assess">.bob/skills/si-assess/</a> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/tree/main/.bob/standards">.bob/standards/</a></p>
       </li>
       <li>
         <h3>Bob reads the evidence</h3>
         <p>He reads what <code>/discover</code> left in the run folder and the code metrics your metrics tool produced. He opens the source only to confirm a line he cites.</p>
-        <p class="kit-files"><a href="https://github.com/yeokimsiang/bob-in-action-v2/tree/main/app">app/</a> <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/tools/metrics/complexity_metrics.py">tools/metrics/complexity_metrics.py</a></p>
+        <p class="kit-files"><a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/tree/main/app">app/</a> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/tools/metrics/complexity_metrics.py">tools/metrics/complexity_metrics.py</a></p>
       </li>
       <li>
         <h3>He checks the ticket history</h3>
         <p>He uses the read-only tickets tool and asks you before every call. A ticket can back up a finding from the code; it never proves one on its own.</p>
-        <p class="kit-files"><a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/.bob/mcp.json">.bob/mcp.json</a> <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/tools/mcp/data/tickets.json">tools/mcp/data/tickets.json</a></p>
+        <p class="kit-files"><a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/.bob/mcp.json">.bob/mcp.json</a> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/tools/mcp/data/tickets.json">tools/mcp/data/tickets.json</a></p>
       </li>
       <li class="is-guard">
         <h3>The guard checks every step</h3>
         <p>Before every tool call, the guard lets Bob read only inside the workspace and write only inside <code>runs/&lt;name&gt;/</code>. It refuses every shell command and every delete, move or rename, and it allows only the ten read-only tools of the four mock servers and the read-only checks tool. The guard is a backstop for mistakes, not a security sandbox. Bob loads it only in a folder you trust, and step 1 of the repository's guide shows how to check.</p>
-        <p class="kit-files"><a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/.bob/settings.json">.bob/settings.json</a> <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/.bob/hooks/pre_tool_guard.py">.bob/hooks/pre_tool_guard.py</a> <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/README.md">README.md</a></p>
+        <p class="kit-files"><a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/.bob/settings.json">.bob/settings.json</a> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/.bob/hooks/pre_tool_guard.py">.bob/hooks/pre_tool_guard.py</a> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/README.md">README.md</a></p>
       </li>
       <li>
         <h3>Bob writes three files and checks them</h3>
         <p><code>runs/&lt;name&gt;/reports/assessment.md</code>, <code>runs/&lt;name&gt;/reports/target-annexes.md</code> and <code>runs/&lt;name&gt;/data/findings.json</code>. Then he runs your two checks on them through the read-only checks tool, which writes nothing, and corrects only what they name, for at most three rounds. He stops and tells you whether his last check passed.</p>
-        <p class="kit-files"><a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/tools/checkers/checks_server.py">tools/checkers/checks_server.py</a></p>
+        <p class="kit-files"><a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/tools/checkers/checks_server.py">tools/checkers/checks_server.py</a></p>
       </li>
       <li class="is-check">
         <h3>Your checks decide</h3>
         <p>You still run the findings check and the report check yourself. When both pass, the stage is done; when either prints errors, you paste them back and Bob fixes only what they name.</p>
-        <p class="kit-files"><a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/.bob/skills/si-assess/scripts/validate_findings.py">.bob/skills/si-assess/scripts/validate_findings.py</a> <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/.bob/skills/si-collate/scripts/validate_report_quality.py">.bob/skills/si-collate/scripts/validate_report_quality.py</a></p>
+        <p class="kit-files"><a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/.bob/skills/si-assess/scripts/validate_findings.py">.bob/skills/si-assess/scripts/validate_findings.py</a> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/.bob/skills/si-collate/scripts/validate_report_quality.py">.bob/skills/si-collate/scripts/validate_report_quality.py</a></p>
       </li>
     </ol>
-    <p class="kit-same"><code>/discover</code> runs in the same architect mode; <code>/plan</code> and <code>/price</code> each have their own. All three take the same path, each with its own skill and checks. The kit's own guide lists every file: <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/.bob/README.md">.bob/README.md</a></p>
+    <p class="kit-same"><code>/discover</code> runs in the same architect mode; <code>/plan</code> and <code>/price</code> each have their own. All three take the same path, each with its own skill and checks. The kit's own guide lists every file: <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/.bob/README.md">.bob/README.md</a></p>
     <p class="kit-same">To see these files change what Bob does, watch <a class="arrow" href="#watch-what-bob-reads">What Bob reads</a>: probes in most of these places, with Bob's real replies.</p>
 
     <h3 class="kit-h">Make it yours</h3>
     <p class="kit-same">Where each piece lives. The kit's rules describe the sample data to Bob; for a client's data, change those rules and confirm the client's data-handling terms.</p>
     <ul class="kit-yours">
-      <li><b>Your standards and scoring rubric</b> <a href="https://github.com/yeokimsiang/bob-in-action-v2/tree/main/.bob/standards">.bob/standards/</a></li>
-      <li><b>Your personas and their rules</b><span>A new outside tool also goes on the guard's allowed list.</span> <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/.bob/custom_modes.yaml">.bob/custom_modes.yaml</a> <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/.bob/README.md">.bob/README.md</a></li>
-      <li><b>Your team and ticket history</b><span>Each data file is pinned, and its server will not start until the pin matches.</span> <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/tools/mcp/README.md">tools/mcp/README.md</a> <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/tools/mcp/datasets.json">tools/mcp/datasets.json</a></li>
-      <li><b>Your rate card</b><span>In SGD only; it is pinned the same way.</span> <a href="https://github.com/yeokimsiang/bob-in-action-v2/blob/main/tools/README.md">tools/README.md</a></li>
+      <li><b>Your standards and scoring rubric</b> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/tree/main/.bob/standards">.bob/standards/</a></li>
+      <li><b>Your personas and their rules</b><span>A new outside tool also goes on the guard's allowed list.</span> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/.bob/custom_modes.yaml">.bob/custom_modes.yaml</a> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/.bob/README.md">.bob/README.md</a></li>
+      <li><b>Your team and ticket history</b><span>Each data file is pinned, and its server will not start until the pin matches.</span> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/tools/mcp/README.md">tools/mcp/README.md</a> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/tools/mcp/datasets.json">tools/mcp/datasets.json</a></li>
+      <li><b>Your rate card</b><span>In SGD only; it is pinned the same way.</span> <a href="https://github.com/Ingram-Micro-Asia-Singapore/bob-in-action-v2/blob/main/tools/README.md">tools/README.md</a></li>
     </ul>
   </div>
 </section>

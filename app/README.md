@@ -21,7 +21,7 @@ Four layers, each in one place:
 
 Also there: `src/main/resources/jobs.properties` names the two job classes, and `Desk.java` loads whichever one is asked for by its name. `src/main/java/com/ingramtrials/base/ScheduledJobs.java` would run both every night at 01:00 and 01:30, but a setting in `src/main/resources/application.properties` keeps them switched off. `InvoiceRunJobV2.java` is in no list, and nothing uses `LegacyInvoicePrinter.java`. The one test, `src/test/java/com/ingramtrials/base/DeskMoneyTest.java`, checks how money is rounded and nothing else.
 
-The demo's [recorded copy of the app](https://yeokimsiang.github.io/bob-in-action-v2/legacy-desk/#code) links each part of the screen to the lines that run it, with the findings Bob made there.
+The demo's [recorded copy of the app](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/legacy-desk/#code) links each part of the screen to the lines that run it, with the findings Bob made there.
 
 ## Build and run (optional)
 
@@ -69,4 +69,4 @@ foreach ($order in $orders) {
 }
 ```
 
-If you would rather not install Java 8, the demo page has a [recorded copy of the desk](https://yeokimsiang.github.io/bob-in-action-v2/legacy-desk/#use) that answers these orders as the real app does.
+If you would rather not install Java 8, the demo page has a [recorded copy of the desk](https://ingram-micro-asia-singapore.github.io/bob-in-action-v2/legacy-desk/#use) that answers these orders as the real app does.
